@@ -1,0 +1,24 @@
+<section id="home" class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url('../../../../assets/img/background.jpg'); background-size:cover">
+  <div class="container-fluid container-fluid-max">
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <h3 class="text-white">Visit me on Pornhub or shoot with me on SexyJobs!</h3>
+        <div class="mt-3">
+          <a class="btn btn-pink mr-2" href="" role="button" href="{{pornhubUrl}}">Pornhub</a>
+          <a class="btn btn-pink" href="" role="button" href="{{sexyJobsUrl}}">Sexy Jobs</a>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center" *ngFor="let social of socials">
+        <a href="{{ social.value }}">
+          <i class="fab social-icon" [ngClass]="social.key"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

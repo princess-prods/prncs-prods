@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@font-face { font-family: anastasia; src: url(assets/fonts/anastasia.ttf) format("truetype"); }
+@import "node_modules/bootstrap/scss/bootstrap";
+:root {
+    --princess-pink: #FF758C;
+    --cream: #FFFEF2;
+}
+
+body {
+    background-color: #2e2e2e;
+    color: var(--cream);
+    font-family: 'Bitter';
+}
+
+a {
+    color: var(--cream);
+}
+
+.pink {
+    color: var(--princess-pink);
+}
+
+.creamy {
+    color: var(--cream);
+}
+
+.btn-pink {
+    background-color: var(--princess-pink);
+    color: var(--cream);
+}
+
+.backgrounded {
+    background-image: url("./assets/img/background.jpg");
+}
